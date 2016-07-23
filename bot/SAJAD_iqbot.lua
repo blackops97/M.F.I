@@ -315,11 +315,9 @@ topkecleon
 Vamptacus
 
 Our channels
-@teleseedch [English]
-@iranseed [persian]
+@sajad_iq98 [arabic]
 
-Our website 
-http://teleseed.seedteam.org/
+
 ]],
     help_text_realm = [[
 Realm Commands:
