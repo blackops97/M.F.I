@@ -12,7 +12,7 @@ local function check_member_super(cb_extra, success, result)
   local data = cb_extra.data
   local msg = cb_extra.msg
   if success == 0 then
-	send_large_msg(receiver, "👌🏻لتلعَب بكَيفك فقَطَ أَلمطور يحَق✔️")
+	send_large_msg(receiver, "���لتلعب بكيفك👊فقط للادمنيه✋💔️")
   end
   for k,v in pairs(result) do
     local member_id = v.peer_id
@@ -45,7 +45,7 @@ local function check_member_super(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
-	  local text = '✔️ تمً تًفعَـيل ألمَجمَوَعـه ✔️.'
+	  local text = '☑️تم تفعيل المجموعه☑️'
       return reply_msg(msg.id, text, ok_cb, false)
     end
   end
@@ -69,7 +69,7 @@ local function check_member_superrem(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = nil
       save_data(_config.moderation.data, data)
-	  local text = '✔️ تمً تَعطَيلَ ألمَجمَوَعـه ✔️.'
+	  local text = '⚠️تم تعطيل المجموعه⚠️'
       return reply_msg(msg.id, text, ok_cb, false)
     end
   end
@@ -185,11 +185,11 @@ local function lock_group_links(msg, data, target)
   end
   local group_link_lock = data[tostring(target)]['settings']['lock_link']
   if group_link_lock == 'yes' then
-    return '😠 الروابط بالفعل مقفوله في المجموعه 🔐'
+    return 'الروابط بالفعل☑️تم قفلها🔒'
   else
     data[tostring(target)]['settings']['lock_link'] = 'yes'
     save_data(_config.moderation.data, data)
-    return ' تم ✔️ قفل الروابط في المجموعه 🔐'
+    return 'تم قفل🔒الروابط في المجموعه☑️'
   end
 end
 
@@ -199,11 +199,11 @@ local function unlock_group_links(msg, data, target)
   end
   local group_link_lock = data[tostring(target)]['settings']['lock_link']
   if group_link_lock == 'no' then
-    return '😠 الروابط بالفعل مفتوحه في المجموعه 🔓✔️'
+    return 'الروابط بالفعل☑️مفتوحه🔓'
   else
     data[tostring(target)]['settings']['lock_link'] = 'no'
     save_data(_config.moderation.data, data)
-    return ' تم ✔️ فتح الروابط في المجموعه يمكنك الارسال الان 🔓'
+    return 'تم☑️ فتح الروابط🔓يمكنك الارسال الان😽'
   end
 end
 
@@ -212,15 +212,15 @@ local function lock_group_spam(msg, data, target)
     return
   end
   if not is_owner(msg) then
-    return "✋🏻 لا تلعب بكيفك  فقط  المدير والادمن يفعل ذالك😠"
+    return "لا تلعب بكيفك👊😠 للادمنيه فقط✋"
   end
   local group_spam_lock = data[tostring(target)]['settings']['lock_spam']
   if group_spam_lock == 'yes' then
-    return '😠 مضاد السبام بالفعل مقفول 💊 ✔️'
+    return 'تم☑️بالفعل قفل🔒مضاد السبام✋'
   else
     data[tostring(target)]['settings']['lock_spam'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ قفل مضاد السبام 💊 🔐'
+    return 'تم قفل🔒 مضاد السبام☑️'
   end
 end
 
@@ -230,11 +230,11 @@ local function unlock_group_spam(msg, data, target)
   end
   local group_spam_lock = data[tostring(target)]['settings']['lock_spam']
   if group_spam_lock == 'no' then
-    return '😠 مضاد السبام بالفعل مفتوح 💊🔓'
+    return '���تم ☑️ بالفعل فتح 🔓 مضاد 💊 السبام ✋😾'
   else
     data[tostring(target)]['settings']['lock_spam'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ فتح مضاد السبام 💊 🔓'
+    return 'تم فتح🔓مضاد السبام☑️'
   end
 end
 
@@ -244,11 +244,11 @@ local function lock_group_flood(msg, data, target)
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'yes' then
-    return '😠 التكرار بالفعل مقفل 🔐✔️'
+    return 'التكرار ☑️ بالفعل مقفول 🔒✋'
   else
     data[tostring(target)]['settings']['flood'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ قفل التكرار 🔐'
+    return 'تم قفل 🔒 التكرار☑️'
   end
 end
 
@@ -258,11 +258,11 @@ local function unlock_group_flood(msg, data, target)
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'no' then
-    return '😠 التكرار بالفعل مفتوح 🔓✔️'
+    return 'التكرار ☑️ بالفعل مفتوح🔓✋'
   else
     data[tostring(target)]['settings']['flood'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ فتح التكرار 🔓'
+    return 'تم ☑️ فتح 🔓 التكرار'
   end
 end
 
@@ -272,11 +272,11 @@ local function lock_group_arabic(msg, data, target)
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'yes' then
-    return '😠 الغه العربيه بالفعل مقفوله 🔐✔️'
+    return 'اللغه العربيه بالفعل ☑️ تم قفلها 🔒✋'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ قفل اللغه العربيه 🔐'
+    return 'تم ☑️ قفل 🔒 اللغه العربيه✋'
   end
 end
 
@@ -286,11 +286,11 @@ local function unlock_group_arabic(msg, data, target)
   end
   local group_arabic_lock = data[tostring(target)]['settings']['lock_arabic']
   if group_arabic_lock == 'no' then
-    return '😠 اللغه العربيه بالفعل مفتوحه 🔓✔️'
+    return 'اللغه العربيه بالفعل ☑️ مفتوحه🔓'
   else
     data[tostring(target)]['settings']['lock_arabic'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ فتح اللغه العربيه 🔓'
+    return 'تم ☑️ فتح 🔓 اللغه العربيه'
   end
 end
 
@@ -300,12 +300,12 @@ local function lock_group_membermod(msg, data, target)
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'yes' then
-    return '😠 الاضافه بالفعل مقفوله 🔐✋🏻'
+    return 'الاضافه بالفعل ☑️ تم قفلها 🔐'
   else
     data[tostring(target)]['settings']['lock_member'] = 'yes'
     save_data(_config.moderation.data, data)
   end
-  return 'تم ✔️ قفل الاضافه 🔐✋🏻'
+  return 'تم ☑️ قفل 🔒 الاضافه✋'
 end
 
 local function unlock_group_membermod(msg, data, target)
@@ -314,11 +314,11 @@ local function unlock_group_membermod(msg, data, target)
   end
   local group_member_lock = data[tostring(target)]['settings']['lock_member']
   if group_member_lock == 'no' then
-    return '😠 الاضافه بالفعل مفتوحه 🔓✔️'
+    return 'الاضافه بالفعل ☑️ مفتوحه 🔓'
   else
     data[tostring(target)]['settings']['lock_member'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ فتح الاضافه 🔓🌹'
+    return 'تم ☑️ فتح 🔓 الاضافه ✋'
   end
 end
 
@@ -328,11 +328,11 @@ local function lock_group_rtl(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_rtl']
   if group_rtl_lock == 'yes' then
-    return '😠 الاضافه الجماعيه بالفعل مقفوله 🔐 ✋🏻'
+    return 'الاضافه الجماعيه بالفعل ☑️ تم قفلها 🔒'
   else
     data[tostring(target)]['settings']['lock_rtl'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ قفل الاضافه الجماعيه 🔐 ✋🏻'
+    return 'تم ☑️ قفل🔐 الاضافه الجماعيه ✋'
   end
 end
 
@@ -342,11 +342,11 @@ local function unlock_group_rtl(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_rtl']
   if group_rtl_lock == 'no' then
-    return '😠 الاضافه الجماعيه بالفعل مفتوحه 🔓✔️'
+    return 'الاضافه الجماعيه بالفعل ☑️ تم فتحها 🔓✋'
   else
     data[tostring(target)]['settings']['lock_rtl'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ فتح الاضافه الجماعيه 🔓🌹'
+    return 'تم ☑️ فتح 🔓 الاضافه الجماعيه'
   end
 end
 
@@ -356,11 +356,11 @@ local function lock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'yes' then
-    return '😠 الملصقات بالفعل مقفوله 🔐✋🏻'
+    return 'الملصقات بالفعل ☑️ تم قفلها 🔐✋'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ قفل الملصقات 🔐✋🏻'
+    return 'تم ☑️ قفل 🔒 الملصقات ✋'
   end
 end
 
@@ -370,11 +370,11 @@ local function unlock_group_sticker(msg, data, target)
   end
   local group_sticker_lock = data[tostring(target)]['settings']['lock_sticker']
   if group_sticker_lock == 'no' then
-    return '😠 الملصقات بالفعل مفتوحه 🔓✔️'
+    return 'الملصقات بالفعل ☑️ تم فتحها 🔓✋'
   else
     data[tostring(target)]['settings']['lock_sticker'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ فتح الملصقات 🔐✔️'
+    return 'تم ☑️ فتح 🔓 الملصقات'
   end
 end
 
@@ -384,11 +384,11 @@ local function lock_group_contacts(msg, data, target)
   end
   local group_rtl_lock = data[tostring(target)]['settings']['lock_contacts']
   if group_contacts_lock == 'yes' then
-    return '😠 جهات الاتصال بالفعل مقفوله 🔐✋🏻'
+    return 'جهات الاتصال بالفعل ☑️ تم قفلها🔒✋'
   else
     data[tostring(target)]['settings']['lock_contacts'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ قفل جهات الاتصال 🔐✋🏻'
+    return 'تم ☑️ قفل 🔒 جهة الاتصال😽'
   end
 end
 
@@ -398,11 +398,11 @@ local function unlock_group_contacts(msg, data, target)
   end
   local group_contacts_lock = data[tostring(target)]['settings']['lock_contacts']
   if group_contacts_lock == 'no' then
-    return '😠 جهات الاتصال بالفعل مفتوحه 🔓✔️'
+    return 'جهات الاتصال بالفعل ☑️ تم فتحها 🔓✋'
   else
     data[tostring(target)]['settings']['lock_contacts'] = 'no'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ فتح جهات الاتصال 🔓⭕️'
+    return 'تم ☑️ فتح 🔓 جهات الاتصال✋'
   end
 end
 
@@ -412,11 +412,11 @@ local function enable_strict_rules(msg, data, target)
   end
   local group_strict_lock = data[tostring(target)]['settings']['strict']
   if group_strict_lock == 'yes' then
-    return '😠 التحذير بالفعل مقفول 🔐✋🏻'
+    return 'التحذير بالفعل ☑️ تم قفله 🔒✋'
   else
     data[tostring(target)]['settings']['strict'] = 'yes'
     save_data(_config.moderation.data, data)
-    return 'تم ✔️ قفل التحذير  🔐✋🏻'
+    return 'تم ☑️ قفل 🔒 التحذير ✋'
   end
 end
 
@@ -426,11 +426,11 @@ local function disable_strict_rules(msg, data, target)
   end
   local group_strict_lock = data[tostring(target)]['settings']['strict']
   if group_strict_lock == 'no' then
-    return '😠 التحذير بالفعل مفتوح 🔓✔️'
+    return 'التحذير بالفعل ☑️ تم فتحه 🔓✋'
   else
     data[tostring(target)]['settings']['strict'] = 'no'
     save_data(_config.moderation.data, data)
-    return '✔️ تم فتح التحذير 🔓⭕️'
+    return 'تم ☑️ فتح 🔓 التحذير😽✋'
   end
 end
 --End supergroup locks
@@ -470,7 +470,7 @@ local function set_public_membermod(msg, data, target)
 	save_data(_config.moderation.data, data)
   end
   if group_public_lock == 'yes' then
-    return '😠 المجموعه عامه بالفعل ✔️'
+    return 'المجموعه بالفعل ☑️ عامه 😾✋'
   else
     data[tostring(target)]['settings']['public'] = 'yes'
     save_data(_config.moderation.data, data)
@@ -1012,9 +1012,9 @@ elseif get_cmd == "رفع اداري" then
 					save_data(_config.moderation.data, data)
 					savelog(channel, name_log.."["..from_id.."] set ["..v.peer_id.."] as owner by username")
 				if result.username then
-					text = member_username.." ["..v.peer_id.."] ولآَ يـهمَكَ تمَ ✔️ رفعـكَ مـديـر 👍 سفنجهَ كلـبيَ 💔"
+					text = member_username.." ["..v.peer_id.."]ولا يهمك تم ☑️ رفعك مدير 👍 سفنجه كلبي 💔"
 				else
-					text = "["..v.peer_id.."] ولآَ يـهمَكَ تمَ ✔️ رفعـكَ مـديـر 👍 سفنجهَ كلـبيَ 💔"
+					text = "["..v.peer_id.."]ولا يهمك تم ☑️ رفعك مدير 👍 سفنجه كلبي 💔"
 				end
 			end
 		elseif memberid and vusername ~= member and vpeer_id ~= memberid then
@@ -1029,7 +1029,7 @@ elseif get_cmd == "رفع اداري" then
 				data[tostring(channel)]['set_owner'] = tostring(memberid)
 				save_data(_config.moderation.data, data)
 				savelog(channel, name_log.."["..from_id.."] set ["..memberid.."] as owner by username")
-				text = "["..memberid.."] ولآَ يـهمَكَ تمَ ✔️ رفعـكَ مـديـر 👍 سفنجهَ كلـبيَ 💔"
+				text = "["..memberid.."]ولا يهمك تم ☑️ رفعك مدير 👍 سفنجه كلبي 💔"
 			end
 		end
 	end
@@ -1089,7 +1089,7 @@ local function run(msg, matches)
 				return
 			end
 			if is_super_group(msg) then
-				return reply_msg(msg.id, '👈 ألمَجمَوَعــهَ بألــتأكيَدَ مفعَلهَ ✔️..', ok_cb, false)
+				return reply_msg(msg.id, 'المجموعه بالتأكيد ☑️ تم تفعيلها ✋😾َ', ok_cb, false)
 			end
 			print("SuperGroup "..msg.to.print_name.."("..msg.to.id..") added")
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] added SuperGroup")
@@ -1099,7 +1099,7 @@ local function run(msg, matches)
 		end
 
 		if matches[1] == 'تعطيل' and is_admin1(msg) and not matches[2] then			if not is_super_group(msg) then
-				return reply_msg(msg.id, '👈 ألمَجمَوَعــهَ بألــتأكيَدَ تَمَ تَعَطيَلهَأَ ✔️..', ok_cb, false)
+				return reply_msg(msg.id, 'المجموعه بالتأكيد ☑️ تم تعطيلها ✋⚠️', ok_cb, false)
 			end
 			print("SuperGroup "..msg.to.print_name.."("..msg.to.id..") removed")
 			superrem(msg)
@@ -1121,7 +1121,7 @@ local function run(msg, matches)
 			if not is_owner(msg) and not is_support(msg.from.id) then
 				return
 			end
-			member_type = '❤️ قَأئـمَهَ أَلأدرييــنَ ❤️'
+			member_type = '❤قائمة الاداريين ❤️'
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup Admins list")
 			admins = channel_get_admins(receiver,callback, {receiver = receiver, msg = msg, member_type = member_type})
 		end
@@ -1142,7 +1142,7 @@ local function run(msg, matches)
 		end
 
 		if matches[1] == "كشف بوت" and is_momod(msg) then
-			member_type = 'كشف البوتات ب المجموعه'
+			member_type = 'تم ☑️ الكشف عن البوتات في المجموعه 👍'
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup bots list")
 			channel_get_bots(receiver, callback, {receiver = receiver, msg = msg, member_type = member_type})
 		end
@@ -1542,7 +1542,7 @@ local function run(msg, matches)
 			data[tostring(msg.to.id)]['settings']['set_photo'] = 'waiting'
 			save_data(_config.moderation.data, data)
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] started setting new SuperGroup photo")
-			return '✋🏻ارسل لي صوره الان ✔️👍'
+			return 'ارسل ☑️ لي صورة 👍 الان ✋😽'
 		end
 
 		if matches[1] == 'مسح' then
@@ -1640,7 +1640,7 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked contact posting")
 				return lock_group_contacts(msg, data, target)
 			end
-			if matches[2] == 'الكل' then
+			if matches[2] == 'التحذير' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked enabled strict settings")
 				return enable_strict_rules(msg, data, target)
 			end
@@ -1718,9 +1718,9 @@ local function run(msg, matches)
 				if not is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: mute "..msg_type)
 					mute(chat_id, msg_type)
-					return msg_type.." تَِم ✔️ قَـفِلَ ألـصوتيــات 🔐✋"
+					return msg_type.."تم ☑️ قفل 🔒 الصوتيات ✋😽"
 				else
-					return "SuperGroup mute "..msg_type.." الصوتيات 🌚 بالفعل مقفولة🔐😠"
+					return "SuperGroup mute "..msg_type.."الصوتيات بالفعل ☑️ تم قفلها 🔒✋"
 				end
 			end
 			if matches[2] == 'الصور' then
@@ -1728,9 +1728,9 @@ local function run(msg, matches)
 				if not is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: mute "..msg_type)
 					mute(chat_id, msg_type)
-					return msg_type.." تَِم ✔️ قَـفِلَ ألـصور 🔐"
+					return msg_type.."تم ☑️ قفل 🔒 الصور 📷✋"
 				else
-					return "SuperGroup mute "..msg_type.." الصور 🌚 بالفعل مقفولة🔐😠"
+					return "SuperGroup mute "..msg_type.."الصور بالفعل ☑️ تم فتحها 📷✋"
 				end
 			end
 			if matches[2] == 'الفيديو' then
@@ -1738,9 +1738,9 @@ local function run(msg, matches)
 				if not is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: mute "..msg_type)
 					mute(chat_id, msg_type)
-					return msg_type.." تَِم ✔️ قَـفِلَ الـفـيــديــو 🔐"
+					return msg_type.."تم ☑️ قفل 🔒 الفيديو 🎥✋"
 				else
-					return "SuperGroup mute "..msg_type.." الفيديوهات 🌚 بالفعل مقفولة🔐😠"
+					return "SuperGroup mute "..msg_type.."الفيديوهات بالفعل ☑️ تم قفلها 🔒🎥"
 				end
 			end
 			if matches[2] == 'الصور المتحركه' then
@@ -1748,9 +1748,9 @@ local function run(msg, matches)
 				if not is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: mute "..msg_type)
 					mute(chat_id, msg_type)
-					return msg_type.." تَِم ✔️ قَـفِلَ الـصــور المـتـحركـة 🔐"
+					return msg_type.."تم ☑️ قفل 🔒 الصور المتحركه ✋😽"
 				else
-					return "SuperGroup mute "..msg_type.." الصور المتحركة 🌚 بالفعل مقفولة🔐😠"
+					return "SuperGroup mute "..msg_type.."الصور المتحركه بالفعل ☑️ تم قفلها 🔒✋"
 				end
 			end
 			if matches[2] == 'الفايلات' then
@@ -1758,9 +1758,9 @@ local function run(msg, matches)
 				if not is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: mute "..msg_type)
 					mute(chat_id, msg_type)
-					return msg_type.." تَِم ✔️ قَـفِلَ الـفــايـلات 🔐"
+					return msg_type.."تم ☑️ قفل 🔒 الفايلات ✋😽"
 				else
-					return "SuperGroup mute "..msg_type.." الالفايلات 🌚 بالفعل مقفولة🔐😠"
+					return "SuperGroup mute "..msg_type.."الفايلات بالفعل ☑️ تم قفلها 🔒✋"
 				end
 			end
 			if matches[2] == 'الدردشه' then
@@ -1768,9 +1768,9 @@ local function run(msg, matches)
 				if not is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: mute "..msg_type)
 					mute(chat_id, msg_type)
-					return msg_type.." تَِم ✔️ قَـفِلَ الـدردشــة 🔐"
+					return msg_type.."تم ☑️ قفل 🔒 الدردشة ✋😽"
 				else
-					return "Mute "..msg_type.." الدردشة 🌚 بالفعل مقفولة🔐😠"
+					return "Mute "..msg_type.."الدردشة بالفعل ☑️ تم قفلها 🔒✋"
 				end
 			end
 			if matches[2] == 'المجموعه' then
@@ -1791,9 +1791,9 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return msg_type.." تَمِ ✔️ فـتَحِ الـصـوتـيــات 🔓👍"
+					return msg_type.."تم ☑️ فتح 🔓 الصوتيات 😽"
 				else
-					return "Mute "..msg_type.." الصوتيات 💊 بالفعل مفتوحة🔓😠"
+					return "Mute "..msg_type.."تم بالفعل ☑️ فتح 🔓 الصوتيات ✋😾"
 				end
 			end
 			if matches[2] == 'الصور' then
@@ -1801,9 +1801,9 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return msg_type.." تَمِ ✔️ فـتَحِ الـصـور 🔓👍"
+					return msg_type.."تم ☑️ فتح 🔓 الصور 😽"
 				else
-					return "Mute "..msg_type.." الصور 💊 بالفعل مفتوحة🔓😠"
+					return "Mute "..msg_type.."الصور 📷 بالفعل ☑️ تم فتحها 🔓✋"
 				end
 			end
 			if matches[2] == 'الفيديو' then
@@ -1811,9 +1811,9 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return msg_type.." تَمِ ✔️ فـتَحِ الـفـيـديـو 🔓👍"
+					return msg_type.."تم ☑️ فتح 🔓 الفيديوهات 🎥😽"
 				else
-					return "Mute "..msg_type.." الفيديوهات 💊 بالفعل مفتوحة🔓😠"
+					return "Mute "..msg_type.."تم بالفعل ☑️ فتح 🔓 الفيديوهات 🎥✋"
 				end
 			end
 			if matches[2] == 'الصور المتحركه' then
@@ -1821,9 +1821,9 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return msg_type.." تَمِ ✔️ فـتَحِ الـصـور المـتـحـركـة🔓👍"
+					return msg_type.."تم ☑️ فتح 🔓 الصور المتحركه 😽"
 				else
-					return "Mute "..msg_type.." الصور المتحركة 💊 بالفعل مفتوحة🔓😠"
+					return "Mute "..msg_type.."تم بالفعل ☑️ فتح 🔓 الصور المتحركه ✋😾"
 				end
 			end
 			if matches[2] == 'الفايلات' then
@@ -1831,9 +1831,9 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute "..msg_type)
 					unmute(chat_id, msg_type)
-					return msg_type.." تَمِ ✔️ فـتَحِ الـفـايــلات🔓👍"
+					return msg_type.."تم ☑️ فتح 🔓 الفايلات 😽"
 				else
-					return "Mute "..msg_type.." الفايلات 💊 بالفعل مفتوحة🔓😠"
+					return "Mute "..msg_type.."الفايلات بالفعل ☑️ تم فتحها 🔓✋"
 				end
 			end
 			if matches[2] == 'الدردشه' then
@@ -1841,9 +1841,9 @@ local function run(msg, matches)
 				if is_muted(chat_id, msg_type..': yes') then
 					savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: unmute message")
 					unmute(chat_id, msg_type)
-					return msg_type.." تَمِ ✔️ فـتَحِ الـدردشــة🔓👍"
+					return msg_type.."تم ☑️ فتح 🔓 الدردشة 😽"
 				else
-					return "الدردشة 💊 بالفعل مفتوحة🔓😠"
+					return "تم بالفعل ☑️ فتح 🔓 الدردشة 👊🙊"
 				end
 			end
 			if matches[2] == 'المجموعه' then
@@ -2046,4 +2046,5 @@ return {
   run = run,
   pre_process = pre_process
 }
+
 
