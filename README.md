@@ -5,22 +5,22 @@
 افتـح ترمنـــأل وخلي 
 
 sudo apt-get update 
-
+___________
 بعدها خلي هاي
 
 redis-server
-
+___________
 عوفه مفتوح
 
 افتح ترمنال ثاني وخلي 
 
-_________________________________
+_____________
 sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes
-_________________________________
+_____________
 وراها حط
-________
+______
 git clone https://github.com/blackops97/SAJJAD.iq.git
-_________________________________
+___________
 وراها حط
 ________
 cd SAJJAD.iq
@@ -28,15 +28,15 @@ __________
 وراها خلي
 __________
 chmod +x launch.sh
-______________
+___________
 وراها
-______________
+____________
 ./launch.sh install
-______________
+_____________
  وبعدها
 ________
 ./launch.sh 
-_________________________
+___________
  
 حيطلب منكم رقم تخلون رقمكم 
 الي حتفعلون عليه البوت 
