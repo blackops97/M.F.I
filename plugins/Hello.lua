@@ -11,7 +11,7 @@
 
 do
     
-local function th3boss(msg,matches)
+local function sajad_iq(msg,matches)
     if matches[1] == "chat_add_user"  then 
       return "🔹اهلاً بك جـرارة كـلـبـي 💚🙂\n".." 🔹اسم الكروب :: "..msg.to.title.."\n".."🔹ايدي الكروب :: "..msg.to.id.."\n".."🔹اسم الي ضافك ::"..(msg.from.first_name or " ").."\n".."🔹معرف الي ضافك :: @"..(msg.from.username or " ").."\n".."🔹معرفك :: @"..(msg.from.username or "لايوجد " ).."\n".."🔹ايديك :: :"..msg.from.id
     elseif matches[1] == "chat_add_user_link" then
@@ -28,7 +28,7 @@ return {
         "^!!tgservice (chat_del_user)$"
        
     },
- run = th3boss,
+ run = sajad_iq,
 }
 end
 
