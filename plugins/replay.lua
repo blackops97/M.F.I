@@ -1,4 +1,4 @@
--- made by { @TH3BOSS }
+-- made by { @sajjad_iq98 }
 do
 ws = {}
 rs = {}
@@ -691,8 +691,8 @@ rs[229] = "شايفلك واحد✋ماخذ كرستال ينام🙀🙀" -- re
 ws[230] = "منو يشرب" -- msg
 rs[230] = "حراااااام😱" -- reply
 
-ws[231] = "صاقط" -- msg
-rs[231] = "الصاقط انت👐👐وابوك👌😡" -- reply
+ws[231] = "ساقط" -- msg
+rs[231] = "الساقط انت👐👐وابوك👌😡" -- reply
 
 ws[232] = "حيوان" -- msg
 rs[232] = "انت👐وعمامك😬" -- reply
@@ -733,9 +733,9 @@ function run( msg, matches )
 	
 	-- don't edit this section
 	if ( msg.text == "about" ) then
-		if ( msg.from.username == "TH3BOSS" ) then
+		if ( msg.from.username == "sajjad_iq98" ) then
 			R = get_receiver(msg)
-			send_large_msg ( R , "Made by @TH3BOSS" );
+			send_large_msg ( R , "Made by @sajjad_iq98" );
 		end
 	end 
 
