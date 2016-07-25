@@ -4,7 +4,7 @@
 ▀▄ ▄▀     BY sajad_iq                      ▀▄ ▄▀ 
 ▀▄ ▄▀     BY sajad_iq   (@sajjad_iq98)     ▀▄ ▄▀ 
 ▀▄ ▄▀      channel      (@sajad_iq98       ▀▄ ▄▀ 
-▀▄ ▄▀      ANTI BOT   : منع بوتات            ▀▄ ▄▀ 
+▀▄ ▄▀      ANTI BOT   : منع بوتات         ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 local function isAntiBotEnabled (chatId)
@@ -51,11 +51,11 @@ local function run (msg, matches)
   local chatId = msg.to.id
   if matches[1] == 'قفل البوتات' then
     enableAntiBot(chatId)
-  return 'تـمِ  ✔️ قـفِلَ أضــأفهَ ألــبوَتَِــأت 🔐✋🏻'
+  return 'تم ☑️ قفل 🔒 اضافه البوتات ✋😽'
   end
   if matches[1] == 'فتح البوتات' then
     disableAntiBot(chatId)
-  return 'تـمِ  ✔️ فَتـحَ أضــأفهَ ألــبوَتَِــأت 🔓👍'
+  return 'تم ☑️ فتح 🔓 اضافه البوتات ✋😽'
   end
   if matches[1] == 'chat_add_user' or matches[1] == 'chat_add_user_link' then
     local user = msg.action.user or msg.from
