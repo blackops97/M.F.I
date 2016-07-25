@@ -3,7 +3,7 @@ function sajad_iq (msg, matches)
 
 local reply_id = msg ['id']
 
-local th3boss = '🔹ايديك :: '..msg.from.id..'\n'
+local sajad_iq = '🔹ايديك :: '..msg.from.id..'\n'
 ..'🔹معرفك :: @'..msg.from.username..'\n'
 ..'🔹 المطور @sajjad_iq98'
 
