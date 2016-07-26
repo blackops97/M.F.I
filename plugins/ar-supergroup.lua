@@ -230,7 +230,7 @@ local function unlock_group_spam(msg, data, target)
   end
   local group_spam_lock = data[tostring(target)]['settings']['lock_spam']
   if group_spam_lock == 'no' then
-    return '���تم ☑️ بالفعل فتح 🔓 مضاد 💊 السبام ✋😾'
+    return ' تم ☑️ بالفعل فتح 🔓 مضاد 💊 السبام ✋😾'
   else
     data[tostring(target)]['settings']['lock_spam'] = 'no'
     save_data(_config.moderation.data, data)
@@ -450,7 +450,7 @@ end
 local function get_rules(msg, data)
   local data_cat = 'rules'
   if not data[tostring(msg.to.id)][data_cat] then
-    return 'لم يتم ❌ وضع القوانين 📋 في المجموعه❗���������😽'
+    return 'لم يتم ❌ وضع القوانين 📋 في المجموعه❗💢'
   end
   local rules = data[tostring(msg.to.id)][data_cat]
   local group_name = data[tostring(msg.to.id)]['settings']['set_name']
@@ -489,7 +489,7 @@ local function unset_public_membermod(msg, data, target)
 	save_data(_config.moderation.data, data)
   end
   if group_public_lock == 'no' then
-    return '❌���💢المجموعه ليست ✋عامه ❗️😽'
+    return '❌المجموعه ليست ✋عامه ❗️😽'
   else
     data[tostring(target)]['settings']['public'] = 'no'
 	data[tostring(target)]['long_id'] = msg.to.long_id 
@@ -1099,7 +1099,7 @@ local function run(msg, matches)
 		end
 
 		if matches[1] == 'تعطيل' and is_admin1(msg) and not matches[2] then			if not is_super_group(msg) then
-				return reply_msg(msg.id, 'المجموعه بالتأكيد ☑️ تم تعطيلها ✋���️', ok_cb, false)
+				return reply_msg(msg.id, 'المجموعه بالتأكيد ☑️ تم تعطيلها ✋💢️', ok_cb, false)
 			end
 			print("SuperGroup "..msg.to.print_name.."("..msg.to.id..") removed")
 			superrem(msg)
@@ -1515,7 +1515,7 @@ local function run(msg, matches)
 			local function ok_username_cb (extra, success, result)
 				local receiver = extra.receiver
 				if success == 1 then
-					send_large_msg(receiver, "تم ☑️ و��ع معرف 🆔 للمجموعه 👍😽\n\n🌐 انظر الى الحول 💭 لتشاهد تغيرات 👍 المجموعه 👥😽")
+					send_large_msg(receiver, "تم ☑️ وضع معرف 🆔 للمجموعه 👍😽\n\n🌐 انظر الى الحول 💭 لتشاهد تغيرات 👍 المجموعه 👥😽")
 				elseif success == 0 then
 					send_large_msg(receiver, "فشل ⚠️ تعين ❌ معرف 🆔 المجموعه 👥😽️\nUsername may already be taken.\n\nNote: Username can use a-z, 0-9 and underscores.\nMinimum length is 5 characters.")
 				end
@@ -1803,7 +1803,7 @@ local function run(msg, matches)
 					unmute(chat_id, msg_type)
 					return msg_type.."تم ☑️ فتح 🔓 الصور 😽"
 				else
-					return "Mute "..msg_type.."الصور 📷 بالفعل ☑️ تم فتحها ����✋"
+					return "Mute "..msg_type.."الصور 📷 بالفعل ☑️ تم فتحها ✋"
 				end
 			end
 			if matches[2] == 'الفيديو' then
