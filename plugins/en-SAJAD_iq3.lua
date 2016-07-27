@@ -11,39 +11,37 @@ do
 
 local function run(msg, matches)
 if is_sudo(msg) and matches[1]== "help dev" then
-return [[  It is shown by the channel orders @sajjad_iq98 ❤️💋
+return [[  It is shown by the channel orders @sajad_iq98 🌐
 
 ✔️All orders to operate without setting / او !
-ا🔸➖🔹➖🔸➖🔹➖🔸
+〰️〰️〰️〰️〰️〰️〰️〰️〰️
 
- ❣ sosuper : Upgrade Super Group
+❇️ sosuper : Upgrade Super Group
 
- ❣ add : To activate Group
+❇️ add : To activate Group
 
- ❣ rem : To disable Group
+❇️ rem : To disable Group
 
- ❣ setowner : Raising Director of the total  
+❇️ setowner : Raising Director of the total  
  
- ❣ broadcast : Spread the word in all groups bot
+❇️ broadcast : Spread the word in all groups bot
 
- ❣ bot on : To run the bot to a certain group
+❇️ bot on : To run the bot to a certain group
 
- ❣ bot off :  To extinguish the boot to a certain group
+❇️ bot off :  To extinguish the boot to a certain group
 
- ❣ addsudo : Add developer
+❇️ addsudo : Add developer
 
- ❣ kickbot : To get out the bot of the group
+❇️ kickbot : To get out the bot of the group
 
- ❣ get file : Fetch the file from the server
+❇️ get file : Fetch the file from the server
 
- ❣ isup : Server with a link to improve the bot stop
+❇️ isup : Server with a link to improve the bot stop
 
- ❣ isup cron : Link with the server to improve server
-ا🔸➖🔹➖🔸➖🔹➖🔸
-🃏🔺For inquiries:- Contact Developer :- ☢⚜ 
-✋🏿👇🏿
-#Dev : @sajjad_iq98
-#Dev_Channel : @sajad_iq98
+❇️ isup cron : Link with the server to improve server
+〰️〰️〰️〰️〰️〰️〰️〰️〰️
+®️™️ dev 🔧 @sajjad_iq98
+®️™️ channel 🔧 @sajad_iq98
 ]]
 end
 
