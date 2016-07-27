@@ -1582,7 +1582,7 @@ local function set_supergroup_photo(msg, success, result)
 end
 
 --Run function
-local function DevPointTeam(msg, matches)
+local function SAJAD_iq(msg, matches)
 	if msg.to.type == 'chat' then
 		if matches[1] == 'tosuper' then
 			if not is_admin1(msg) then
@@ -1639,7 +1639,7 @@ local function DevPointTeam(msg, matches)
 
 		if not data[tostring(msg.to.id)] then
 			return
-		end--@DevPointTeam = Dont Remove
+		end--@sajad_iq98 = Dont Remove
 		if matches[1] == "gpinfo" then
 			if not is_owner(msg) then
 				return
@@ -1713,7 +1713,7 @@ local function DevPointTeam(msg, matches)
 				if is_momod2(user_id, channel_id) and not is_admin2(user_id) then
 					return send_large_msg(receiver, "You can't kick mods/owner/admins")
 				end
-				@DevPointTeam
+				@sajad_iq98
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] kicked: [ user#id"..user_id.." ]")
 				kick_user(user_id, channel_id)]]
 				local	get_cmd = 'channel_block'
@@ -2788,7 +2788,7 @@ return {
 	"%[(contact)%]",
 	"^!!tgservice (.+)$",
   },
-  run = DevPointTeam,
+  run = SAJAD_iq,
   pre_process = pre_process
 }
 
