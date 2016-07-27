@@ -13,11 +13,11 @@ local function instagramUser(msg, query)
 	local url = "https://api.instagram.com/v1/users/search?q="..URL.escape(query).."&access_token="..access_token
 	local jstr, res = https.request(url)
 	if res ~= 200 then
-		return "❌ لآيــوجـدِ أتـصـأَلَ ✔️"
+		return "❌ لا يوجد اتصال ⚠️"
     end
 	local jdat = json:decode(jstr)
 	if #jdat.data == 0 then
-		send_msg(receiver,"#عذرا\n❌ لمِ يـَتْم اَلــعثـْور ع يـوزرَ 👍🏻",ok_cb,false)
+		send_msg(receiver,"#عذرا\n❌ لم يتم العثور ع يوزر ❗️⚠️",ok_cb,false)
 	end
 	if jdat.meta.error_message then
 		send_msg(receiver,"#عذرا\n"..jdat.meta.error_message,ok_cb,false)
@@ -62,7 +62,7 @@ local function instagramMedia(msg, query)
 	local url = "https://api.instagram.com/v1/media/shortcode/"..URL.escape(query).."?access_token="..access_token
 	local jstr, res = https.request(url)
 	if res ~= 200 then
-		return "❌ لآيــوجـدِ أتـصـأَلَ ✔️"
+		return "❌ لا يوجد اتصال ⚠️"
     end
 	local jdat = json:decode(jstr)
 	if jdat.meta.error_message then
@@ -81,7 +81,7 @@ local function instagramMedia(msg, query)
 		  text = text.."❣ الاسم : "..jdat.data.user.full_name.."\n"
 		  text = text.."❣ عدد الايك: "..jdat.data.likes.count.."\n"
 	end
-	text = text.."\n@SAJJADNOORI\n❣ #قناة_البوت : @S94IQ"
+	text = text.."\n@sajjad_iq98\n❣ #قناة_البوت : @sajad_iq98"
 	send_msg(receiver,text,ok_cb,false)
 end
 local function run(msg, matches)
