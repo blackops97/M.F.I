@@ -12,7 +12,7 @@ do
 
 function run(msg, matches)
 local reply_id = msg['id']
-  local S = '🔹   السورس 🔹 SAJAD_iq 📁\n🔹   الاصدار 📋 V1.1\n🔹  الموقع 🔹\n \nhttps://github.com/blackops97/SAJAD.iq\n🔹    المطور : @sajjad_iq98 \n 🔹   قناة_البوت:  @sajad_iq98 '
+  local S = '🌐 #السورس sajad_iq\n🔰 الاصدار v1.1 ☑️\n🌐 الموقع\n \nhttps://github.com/blackops97/SAJAD.iq\n🔧 المطور @sajjad_iq98 \n 🔧📱 قناة البوت @sajad_iq98'
 reply_msg(reply_id, S, ok_cb, false)
 end
 
