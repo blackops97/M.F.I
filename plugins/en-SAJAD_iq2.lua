@@ -11,34 +11,32 @@ do
 
 function run(msg, matches)
   return [[ 
-It is shown by the channel orders @S94IQ ❤️💋
+It is shown by the channel orders @sajad_iq98 🌐
 
 ✔️All orders to operate without setting / او !
-🔸➖🔹➖🔸➖🔹➖🔸
- ❣ voice : Keyword pronunciation
+〰️〰️〰️〰️〰️〰️〰️〰️〰️
+🌀 voice : Keyword pronunciation
         voice  SAJJAD [English only]
 
- ❣ photo : Keyword converted Photos
+🌀 photo : Keyword converted Photos
         photo  SAJJAD [English only]
  
- ❣ support : Call to be sent to a support group bots
+🌀 support : Call to be sent to a support group bots
         Hello Support 
 
- ❣ map : get maps
+🌀 map : get maps
         map iraq
 
- ❣ insta : username To view insta Information now 
+🌀 insta : username To view insta Information now 
 
- ❣ sticker : Send a photo
+🌀 sticker : Send a photo
         Respond to the word and make it sticker
 
- ❣ photo : Send poster
+🌀 photo : Send poster
        Respond to them and make them an image
-ا🔸➖🔹➖🔸➖🔹➖🔸
-🃏🔺For inquiries:- Contact Developer :- ☢⚜ 
-✋🏿👇🏿
-#Dev : @sajjad_iq98
-#Dev_Channel : @sajad_iq98
+〰️〰️〰️〰️〰️〰️〰️〰️〰️
+®️™️ dev 🔧 @sajjad_iq98
+®️™️ channel 🔧 @sajad_iq98
  ]]
 
 end
