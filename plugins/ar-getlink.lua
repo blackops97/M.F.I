@@ -740,14 +740,14 @@ return export_chat_link(receiver, callback, true)
 end
 if matches[1] == 'الرابط خاص' then
 if not is_momod(msg) then
-return "👌🏻لتلعَب بكَيفك فقَطَ المدير او الاداري يحَق لهَ✔️"
+return "❌✋ لتلعب بكيفك ⚠️ فقط الاداره يحق لها ❗️ ذلك 👍"
 end
 local group_link = data[tostring(msg.to.id)]['settings']['set_link']
 if not group_link then 
-return "❓يرجئ ارسال [/تغير الرابط] لانشاء رابط المجموعه👍🏻✔️"
+return "يرجى ارسال ❗️ [تغير الرابط] ☑️ لانشاء 👍 رابط المجموعه 👥😽"
 end
 savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
-send_large_msg('user#id'..msg.from.id, "⁉️ رابط مجموعة 👥 "..msg.to.title..'\n'..group_link)
+send_large_msg('user#id'..msg.from.id, "☑️ رابط مجموعه 👥😽"..msg.to.title..'\n'..group_link)
 return "تم ارسال الرابط الى الخاص 😚👍"
 end
 if matches[1] == 'setowner' then
