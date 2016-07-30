@@ -17,7 +17,7 @@ local function history(extra, suc, result)
     send_msg(extra.chatid, 'تَمْ ✔️ تـَنظيَفَ المجـموَعـهْ 🛡👍🏿 🍃', ok_cb, false)
   end
 end
-local function SAJAD-iq(msg, matches)
+local function sajjadhussien(msg, matches)
   if matches[1] == 'تنظيف' and is_sudo(msg) then
     if msg.to.type == 'channel' then
       if tonumber(matches[2]) > 1000 or tonumber(matches[2]) < 1 then
@@ -36,5 +36,5 @@ return {
     patterns = {
         '^(تنظيف) (%d*)$'
     },
-    run = SAJAD-iq
+    run = sajjadhussien
 }
