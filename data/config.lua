@@ -53,7 +53,6 @@ do local _ = {
     "invite",
     "isup",
     "leave_ban",
-    "lock_media",
     "msg_checks",
     "nedme",
     "newgroup",
