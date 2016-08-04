@@ -48,7 +48,6 @@ do local _ = {
     "Hello",
     "id",
     "ingroup",
-    "inpm",
     "inrealm",
     "invite",
     "isup",
