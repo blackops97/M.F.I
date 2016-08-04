@@ -7,7 +7,7 @@ function pre_process(msg)
       return msg 
 end 
 
-function iDev1(msg, matches) 
+function sajad_iq98(msg, matches) 
  local welcome = 'mate:'..msg.to.id 
   if not redis:get(welcome) then 
   return os.execute("./launch.sh") 
@@ -25,7 +25,7 @@ return {
     "^res$", 
     "^(https)$" 
   }, 
-  run = iDev1, 
+  run = sajad_iq, 
   pre_process = pre_process 
 } 
 end
