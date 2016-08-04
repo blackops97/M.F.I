@@ -63,6 +63,7 @@ do local _ = {
     "run",
     "replay",
     "ar-getlink",
+    "re",
     "en-banhammer",
     "en-info",
     "en-lock-bot",
