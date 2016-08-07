@@ -1,9 +1,9 @@
 --[[ 
 ▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
 ▀▄ ▄▀                                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq   (@sajjad_iq98)     ▀▄ ▄▀ 
-▀▄ ▄▀      channel      (@sajad_iq98       ▀▄ ▄▀  
+▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
+▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
+▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
 ▀▄ ▄▀     ANTI BOT  : منع بوتات            ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
@@ -51,7 +51,7 @@ local function run (msg, matches)
   local chatId = msg.to.id
   if matches[1] == 'lock bot' then
     enableAntiBot(chatId)
-  return 'It was lock bots'
+  return 'It ☑️ was lock 🔒 bots 👍☺️'
   end
   if matches[1] == 'unlock bot' then
     disableAntiBot(chatId)
