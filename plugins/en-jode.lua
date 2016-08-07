@@ -131,13 +131,14 @@ local function ali(msg, matches)
 
 		table.insert(result, text)
 	end--@sajjad_iq98
-		local result_text = "زخرفة كلمة :  "..matches[2].."\nتطبيق اكثر من "..tostring(#fonts).." نوع من الخطوط : \n🌐〰️〰️〰️〰️〰️🌐\n"
+	local result_text = "🆕 زخرفة : "..matches[2].."\n💢😻 تصميم "..tostring(#fonts).." خط :\n🌐▶️〰〰〰〰〰◀️🌐\n"
 	a=0
 	for v=1,#result do
 		a=a+1
 		result_text = result_text..a.."- "..result[a].."\n\n"
 	end
-	return result_text.."🌐〰️〰️〰️〰️〰️🌐\n®️™️ dev 🔧 @sajjad_iq98\n®️™️ channel 🔧 @sajad_iq98"end
+	return result_text.."🌐▶️〰️〰️〰️〰️〰️◀️🌐\n®️™️ dev 🔧: @sajjad_iq98\n®️™️ channel🔧: @sajad_iq98\n®™ bot dev🔧:   @sajjad_aliraqi_bot"
+end
 
 return {
 	description = "Fantasy Writer",
