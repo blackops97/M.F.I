@@ -24,7 +24,7 @@ local function run(msg, matches)
 end
 
 return {
-  patterns = {
+  patterns = { 
    "^[#!/]save ([^%s]+) (.+)$"
   }, 
   run = run 
