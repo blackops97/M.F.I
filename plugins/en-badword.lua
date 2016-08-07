@@ -4,7 +4,7 @@
 ▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
 ▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
 ▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
-▀▄ ▄▀     block word  : منع كلمات             ▀▄ ▄▀ 
+▀▄ ▄▀     block word  : منع كلمات          ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 local function addword(msg, name)
