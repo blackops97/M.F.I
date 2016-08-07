@@ -21,7 +21,7 @@ local function run(msg, matches)
 			for k,v in pairs(data[tostring(groups)]) do
 				chat_id =  v
 				local chat = 'chat#id'..chat_id
-				local channel = 'channel#id'..chat_id
+				local channel = 'channel#id'..chat_id 
 				send_large_msg(chat, response)
 				send_large_msg(channel, response)
 			end
