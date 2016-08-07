@@ -1,9 +1,9 @@
---[[
+--[[ 
 ▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
 ▀▄ ▄▀                                      ▀▄ ▄▀ 
-▀▄ ▄▀    BY sajad_iq                       ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq (@sajjad_iq98)       ▀▄ ▄▀ 
-▀▄ ▄▀ JUST WRITED BY sajad_iq              ▀▄ ▄▀   
+▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
+▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
+▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
 ▀▄ ▄▀                                      ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
