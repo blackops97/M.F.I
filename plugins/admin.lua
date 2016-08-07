@@ -14,7 +14,7 @@ local function set_bot_photo(msg, success, result)
   end
 end
 
---Function to add log supergroup
+--Function to add log supergroup 
 local function logadd(msg)
 	local data = load_data(_config.moderation.data)
 	local receiver = get_receiver(msg)
