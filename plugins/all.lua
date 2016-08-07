@@ -110,7 +110,7 @@ local function all(msg,target,receiver)
   local mutes_list = mutes_list(target)
   text = text.."\n\n"..mutes_list
   local muted_user_list = muted_user_list(target)
-  text = text.."\n\n"..muted_user_list
+  text = text.."\n\n"..stats
   local ban_list = ban_list(target)
   text = text.."\n\n"..ban_list
   local file = io.open("./groups/all/"..target.."all.txt", "w")
