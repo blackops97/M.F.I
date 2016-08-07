@@ -147,6 +147,6 @@ return {
 	patterns = {
 		"^(زخرف) (.*)",
 		"^(زخرف) (.*)",
-		},
+		}, 
 	run = sajjadhussien
 }
