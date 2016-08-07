@@ -4,7 +4,7 @@
 ▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
 ▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
 ▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
-▀▄ ▄▀  Image Converter  : تحويل صوره       ▀▄ ▄▀ 
+▀▄ ▄▀  Image Converter  : تحويل صوره       ▀▄ ▄▀  
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 local function toimage(msg, success, result)
