@@ -1,10 +1,10 @@
 --[[ 
 ▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
 ▀▄ ▄▀                                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq   (@sajjad_iq98)     ▀▄ ▄▀ 
-▀▄ ▄▀      channel      (@sajad_iq98       ▀▄ ▄▀  
-▀▄ ▄▀     lock fwd  : منع اعاده توجيه      ▀▄ ▄▀ 
+▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
+▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
+▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
+▀▄ ▄▀     lock fwd  : منع اعاده توجيه     ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 do
@@ -32,11 +32,11 @@ local function run(msg, matches)
             
                     local hash = 'mate:'..msg.to.id
                     redis:set(hash, true)
-                    return "It was lock fwd 🔐✋🏻"
+                    return "it ☑️ was lock 🔒 fwd ☺️👍"
   elseif is_momod(msg) and matches[1] == 'unlock fwd' then
       local hash = 'mate:'..msg.to.id
       redis:del(hash)
-      return "It was unlock fwd 🔓👍"
+      return "it ☑️ was unlock 🔓 fwd 😊"
 end
 
 end
