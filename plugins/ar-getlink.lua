@@ -1,10 +1,10 @@
 --[[ 
 ▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
 ▀▄ ▄▀                                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq   (@sajjad_iq98)     ▀▄ ▄▀ 
-▀▄ ▄▀      channel      (@sajad_iq98       ▀▄ ▄▀  
-▀▄ ▄▀     A SPECiAL LINK  : الرابط خاص      ▀▄ ▄▀ 
+▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
+▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
+▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
+▀▄ ▄▀     A SPECiAL LINK  : الرابط خاص     ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 do
