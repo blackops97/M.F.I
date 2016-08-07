@@ -4,7 +4,7 @@
 ▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
 ▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
 ▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
-▀▄ ▄▀ bot was disabled on specific chat    ▀▄ ▄▀ 
+▀▄ ▄▀ bot was disabled on specific chat    ▀▄ ▄▀  
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 local function is_channel_disabled( receiver )
