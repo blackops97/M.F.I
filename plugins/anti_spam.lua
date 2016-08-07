@@ -11,7 +11,7 @@ local function pre_process(msg)
     return msg
   end
   if msg.from.id == our_id then
-    return msg
+    return msg 
   end
   
     -- Save user on Redis
