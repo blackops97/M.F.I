@@ -1,5 +1,5 @@
 do
-function sajjad (msg, matches)
+function sajjadhussien (msg, matches)
 
 local reply_id = msg ['id']
 
@@ -14,6 +14,6 @@ return {
 patterns = {
 "(ايدي)$"
 },
-run = sajjad
+run = sajjadhussien
 }
 end
