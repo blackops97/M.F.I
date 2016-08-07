@@ -1,19 +1,19 @@
 --[[ 
 ▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
 ▀▄ ▄▀                                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq   (@sajjad_iq98)     ▀▄ ▄▀ 
-▀▄ ▄▀      channel      (@sajad_iq98       ▀▄ ▄▀  
-▀▄ ▄▀      decoration      :  زخرفه        ▀▄ ▄▀ 
+▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
+▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
+▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀   
+▀▄ ▄▀      decoration      :  زخرفه         ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 
-local function sajjad_iq98(msg, matches)
+local function sajjadhussien(msg, matches)
 local reply_id = msg['id']
 	if not is_momod(msg) then
-	local sajjad_iq98= '🚫 لتلعب بكيفك ❌ للمشرفين فقط 🔴👍'
+	local sajjadhussien= '🚫 لتلعب بكيفك ❌ للمشرفين فقط 🔴👍'
 	return
-	reply_msg(reply_id, sajjad_iq98, ok_cb, false)
+	reply_msg(reply_id, sajjadhussien, ok_cb, false)
 	end
 	if #matches < 2 then
 		return "بعد هذا الأمر، من خلال تحديد كلمة المسافة أو العبارة التي تريد إدخال الكتابة الجميلة"
@@ -91,13 +91,13 @@ local reply_id = msg['id']
 
 		table.insert(result, text)
 	end
-	local result_text = "🆕 زخرفة : "..matches[2].."\n💢😻 تصميم "..tostring(#fonts).." خط :\n🃏〰〰〰〰〰〰〰〰〰🃏\n"
+	local result_text = "🆕 زخرفة : "..matches[2].."\n💢😻 تصميم "..tostring(#fonts).." خط :\n🌐▶️〰〰〰〰〰◀️🌐\n"
 	a=0
 	for v=1,#result do
 		a=a+1
 		result_text = result_text..a.."- "..result[a].."\n\n"
 	end
-	return result_text.."🌐▶️〰️〰️〰️〰️〰️〰️〰️〰️◀️🌐\n®️™️ dev 🔧: @sajjad_iq98\n®️™️ channel🔧: @sajad_iq98"
+	return result_text.."🌐▶️〰️〰️〰️〰️〰️◀️🌐\n®️™️ dev 🔧: @sajjad_iq98\n®️™️ channel🔧: @sajad_iq98\n®™ bot dev🔧:   @sajjad_aliraqi_bot"
 end
 
 return {
@@ -108,5 +108,5 @@ return {
 		"^(زخرفه) (.*)",
 		"^(زخرفه)$",
 		},
-	run = sajjad_iq98
+	run = sajjadhussien
 }
