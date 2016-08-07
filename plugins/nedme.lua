@@ -1,5 +1,5 @@
 do
-
+ 
  function ali(msg, matches)
  local ch = '113644348'..msg.to.id--هنا حط ايديك
  local fuse = 'طلب احدهم مجموعه🌚\n\nايديه 🆔' .. msg.from.id .. '\n\n♨️ اسمه ️' .. msg.from.print_name ..'\n\n🌐 معرفه@' .. msg.from.username ..'\n\n🆔 ايدي المجموعه'..msg.to.id.. '\n\n♨️ طلب ❗️ منك \n' .. matches[1]
