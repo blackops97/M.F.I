@@ -1,9 +1,9 @@
 --[[ 
 ▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
 ▀▄ ▄▀                                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq                      ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq   (@sajjad_iq98)     ▀▄ ▄▀ 
-▀▄ ▄▀      channel      (@sajad_iq98       ▀▄ ▄▀ 
+▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
+▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
+▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀   
 ▀▄ ▄▀      ban hammer  : الطرد والحظر      ▀▄ ▄▀ 
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
@@ -251,7 +251,7 @@ if matches[1]:lower() == 'دي' then
       else
         msgr = get_message(msg.reply_id,Kick_by_reply, false)
       end
-	elseif string.match(matches[2], '^%d+$') then
+    elseif string.match(matches[2], '^%d+$') then
 		if tonumber(matches[2]) == tonumber(our_id) then
 			return
 		end
