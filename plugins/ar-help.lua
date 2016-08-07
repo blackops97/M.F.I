@@ -6,7 +6,7 @@ function run(msg, matches)
 الاوامر الاساسيه التي تحتاجها
 🌐▶️〰️〰️〰️〰️〰️◀️🌐
 
-     sajad_Iq      📱
+  
 
 ♻️ م1: الاوامر الرئيسية ♻️
 
@@ -22,6 +22,7 @@ function run(msg, matches)
 
 ®️™ dev 🔧 @sajjad_iq98
 ®️™️ channel 🔧@sajad_iq98
+®™ bot dev🔧:   @sajjad_aliraqi_bot
 ]] 
 
 end 
