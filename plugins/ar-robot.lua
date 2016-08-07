@@ -1,10 +1,10 @@
 --[[ 
 ▀▄ ▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀▄▀▄▄▀▀▄▄▀▀▄▄▀▀▄▄▀▀          
-▀▄ ▄▀                                       ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq                       ▀▄ ▄▀ 
-▀▄ ▄▀     BY sajad_iq   (@sajjad_iq98)      ▀▄ ▄▀ 
-▀▄ ▄▀      channel      (@sajad_iq98        ▀▄ ▄▀ 
-▀▄ ▄▀   تشغيل او اطفاء البوت في دردشة مجد ▀▄ ▄▀  
+▀▄ ▄▀                                      ▀▄ ▄▀ 
+▀▄ ▄▀    BY SAJJAD HUSSIEN                 ▀▄ ▄▀ 
+▀▄ ▄▀   BY SAJJADHUSSIEN   (@sajjad_iq98)  ▀▄ ▄▀    
+▀▄ ▄  JUST WRITED BY SAJJAD HUSSIEN        ▀▄ ▄▀ 
+▀▄ ▄▀    تشغيل او اطفاء البوت في دردشه    ▀▄ ▄▀  
 ▀▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀▄▄▀▀▄▄▀▄▄▀▀
 --]]
 local function is_channel_disabled( receiver )
