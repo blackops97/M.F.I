@@ -489,7 +489,7 @@ local function unset_public_membermod(msg, data, target)
 	save_data(_config.moderation.data, data)
   end
   if group_public_lock == 'no' then
-    return '❌المجموعه ليست ✋عامه ❗️😽'
+  return '🚫 المجموعه بالفعل ☑️ ليست عامه ✋😼'
   else
     data[tostring(target)]['settings']['public'] = 'no'
 	data[tostring(target)]['long_id'] = msg.to.long_id 
@@ -1061,7 +1061,7 @@ local function set_supergroup_photo(msg, success, result)
 end
 
 --Run function
-local function run(msg, matches)
+local function sajjadhussien(msg, matches)
 	if msg.to.type == 'chat' then
 		if matches[1] == 'ترقيه سوبر' then
 			if not is_admin1(msg) then
@@ -2043,7 +2043,7 @@ return {
 	"%[(contact)%]",
 	"^!!tgservice (.+)$",
   },
-  run = run,
+  run = sajjadhussien,
   pre_process = pre_process
 }
 
