@@ -41,7 +41,6 @@ do local _ = {
     "sajad_iq",
     "setwelcome",
     "get",
-    "id",
     "ingroup",
     "inrealm",
     "invite",
