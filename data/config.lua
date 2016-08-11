@@ -58,6 +58,7 @@ do local _ = {
     "ar-me",
     "ar-badword",
     "en-jode",
+    "en-sajad_iq",
     "ar-jode",
     "replay",
     "ar-supergroup",
